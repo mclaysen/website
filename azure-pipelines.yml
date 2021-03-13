@@ -1,0 +1,29 @@
+# Starter pipeline
+
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: Ubuntu-16.04
+
+steps:
+
+- task: CopyFiles@2
+  inputs:
+    Contents: '**'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+    CleanTargetFolder: true
+    OverWrite: true
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: '$(build.artifactstagingdirectory)'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
