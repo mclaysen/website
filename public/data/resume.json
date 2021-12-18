@@ -1,0 +1,59 @@
+{
+    "name":
+    {
+        "first": "Matthew",
+        "middleInitial": "M",
+        "last": "Claysen"
+    },
+    "address": 
+    {
+        "city": "Birmingham",
+        "state": "MI",
+        "zip":"48009"
+    },
+    "phone": "248-971-0812",
+    "email": "contact@mclaysen.com",
+    "jobExperience":
+    [
+        {
+            "company": "Michigan Medicine",
+            "location": 
+            {
+                "city": "Ann Arbor",
+                "state": "MI",
+                "zip": "48109"
+            },
+            "startMonth": 12,
+            "startYear": 2017,
+            "currentRole": true,
+            "title":"Application Development Team Manager",
+            "summary": "Manage Application Development team within the Perioperative Services department of Michigan Medicine. This team supports 6 operating room sites and multiple procedural areas. My role is to lead projects, develop software, and guide the team with a goal of increasing patient safety, and improving perioperative outcomes. In this role I regularly interface with leaders throughout the organization, including executive leaders, and Surgical Chairs.",
+            "highlights":
+            [
+                "Maintain and develop over 30 different custom applications, 5 of which have hundreds of unique daily users.",
+                "Lead project to implement electronic crash carts audits throughout Michigan Medicine. Carts that have implemented the electronic check were found to be four times more likely to be checked.",
+                "Introduce DevOps practices and agile processes to the Application Development team."
+            ]
+        },
+        {
+            "company": "Michigan Medicine",
+            "location": 
+            {
+                "city": "Ann Arbor",
+                "state": "MI",
+                "zip": "48109"
+            },
+            "startMonth": 12,
+            "startYear": 2017,
+            "currentRole": true,
+            "title":"Application Development Team Manager",
+            "summary": "Manage Application Development team within the Perioperative Services department of Michigan Medicine. This team supports 6 operating room sites and multiple procedural areas. My role is to lead projects, develop software, and guide the team with a goal of increasing patient safety, and improving perioperative outcomes. In this role I regularly interface with leaders throughout the organization, including executive leaders, and Surgical Chairs.",
+            "highlights":
+            [
+                "Maintain and develop over 30 different custom applications, 5 of which have hundreds of unique daily users.",
+                "Lead project to implement electronic crash carts audits throughout Michigan Medicine. Carts that have implemented the electronic check were found to be four times more likely to be checked.",
+                "Introduce DevOps practices and agile processes to the Application Development team."
+            ]
+        }
+    ]
+}
