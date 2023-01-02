@@ -5,7 +5,6 @@ import {
     QueryClient,
     QueryClientProvider,
   } from "react-query";
-import axios from 'axios';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import ReactDOM from 'react-dom';
 import Grid from '@mui/material/Grid';
@@ -16,7 +15,6 @@ import {NameDiv} from './Resume.styles';
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
-import { render } from '@testing-library/react';
 import { useFetch } from '../api/useFetch';
 import ProfessionalExperience from './ProfessionalExperience';
 
