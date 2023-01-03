@@ -62,7 +62,7 @@ const Resume = () => {
           </Grid>
         </Grid>
           {data?.jobExperience?.map((value, index)=>{
-            return <ProfessionalExperience role={value}></ProfessionalExperience>
+            return <ProfessionalExperience role={value} index={index}></ProfessionalExperience>
           })}
 
           

@@ -13,10 +13,8 @@ interface Address {
 export interface Role {
     company: string;
     location: Address;
-    startMonth: number;
-    startYear: number;
-    endMonth?: number;
-    endYear?: number;
+    startDate: Date;
+    endDate?: Date;
     currentRole: boolean;
     title: string;
     summary: string;
