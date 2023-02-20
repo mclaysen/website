@@ -10,7 +10,23 @@ import { ResumeMainProps, Role } from './ResumeProps';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 import {theme} from '../theme/typeography';
 import { start } from 'repl';
-import { GetYearInformation } from '../utils/GetYearInformation'
+
+const GetYearInformation = (startDate: Date, endDate: Date | undefined, currentRole: Boolean) => {
+  
+  let endText = "";
+
+  let startDateValue = new Date(startDate);
+  if(currentRole || endDate === undefined)
+  {
+    endText = "present";
+  }
+  else
+  {
+    let endDateValue = new Date(endDate)
+    endText = endDateValue.getMonth() + "/"+endDateValue.getFullYear();
+  }
+  return startDateValue.getMonth()+"/"+startDateValue.getFullYear() + " - " + endText;
+}
 
 const ProfessionalExperience = ({role, index} : {role: Role, index: Number}) => {
 

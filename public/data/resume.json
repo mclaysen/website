@@ -87,6 +87,83 @@
                 "Worked on performance improvement projects in the Central Sterile Processing Department with a combined outcome of reducing overall process lead time by 33%.",
                 "Guided student projects with teams from the College of Engineering, Business School, and School of Public Health"
             ]
+        },
+        {
+            "company": "Michigan Medicine",
+            "location": 
+            {
+                "city": "Ann Arbor",
+                "state": "MI",
+                "zip": "48109"
+            },
+            "startDate": "2011-11-01T08:00:00Z",
+            "endDate": "2013-09-01T08:00:00Z",
+            "currentRole": false,
+            "title":"Industrial Engineer",
+            "summary": "Act as a support engineer for projects within the Perioperative Services department. I collaborated with other engineers on projects and assisted with data needs. I utilized my background in lean manufacturing by applying those principles to healthcare.",
+            "highlights":
+            [
+                "Developed and supported electronic process to track issues that arise in any of the Perioperative Services departments.",
+                "Managed lean project to reduce delivery time of medical equipment, especially infusion pumps. This project resulted in a 60% reduction of lead time for the delivery of an average of nearly 100 items per day.",
+                "Implemented tracking process for loaner instrumentation in conjunction with the Perioperative Supply Chain team. This software was designed to understand volumes, track issues, and implement communication pathway between the Supply Chain team and the Central Sterile Processing Department.",
+                "Developed process to track personal protective equipment in the operating rooms. This project allowed tracking of testing results, ownership, and condition of around 1000 pieces of equipment.",
+                "Designed staffing model for Perioperative Technicians, by analyzing workload and shadowing staff. This project demonstrated there was an extreme shortage in staff and resulted in an increase of staffing levels from 25 to 30 FTEs."
+            ]
+        },
+        {
+            "company": "Michigan Medicine",
+            "location": 
+            {
+                "city": "Ann Arbor",
+                "state": "MI",
+                "zip": "48109"
+            },
+            "startDate": "2010-07-01T08:00:00Z",
+            "endDate": "2011-11-01T08:00:00Z",
+            "currentRole": false,
+            "title":"Management Engineer Fellow",
+            "summary": "Supported senior engineers and directors with making data driven decisions regarding major expansion project for the Central Sterile Processing Department.",
+            "highlights":
+            [
+                "Designed workflow for multimillion-dollar renovation of the Central Sterile Processing Department using lean techniques and coordinated transition to renovated department.",
+                "Held leadership role on the Sterilization and Disinfection Subcommittee, which was charged with managing sterilization practices, and performing RCAs on process issues."
+            ]
+        },
+        {
+            "company": "Michigan Medicine",
+            "location": 
+            {
+                "city": "Ann Arbor",
+                "state": "MI",
+                "zip": "48109"
+            },
+            "startDate": "2010-01-01T08:00:00Z",
+            "endDate": "2010-05-01T08:00:00Z",
+            "currentRole": false,
+            "title":"Senior Design Team",
+            "summary": "Worked directly with the current Chief Medical Officer of Michigan Medicine to analyze and recommend improvements to the current Adult Emergency Department intake process.",
+            "highlights":
+            [
+                "Created flowchart of Emergency Department intake process, collected data, compared to historical data, analyzed findings, and developed recommendations to reduce time between a patient arrival, and initial encounter with a physician."
+            ]
+        },
+        {
+            "company": "University of Michigan International Center",
+            "location": 
+            {
+                "city": "Ann Arbor",
+                "state": "MI",
+                "zip": "48109"
+            },
+            "startDate": "2008-07-01T08:00:00Z",
+            "endDate": "2008-09-01T08:00:00Z",
+            "currentRole": false,
+            "title":"Media Assistant/Student Services",
+            "summary": "Role to assist with programs that were designed to help acclimate international students to their new environment.",
+            "highlights":
+            [
+                "Used Microsoft Excel to improve efficiency of the scheduling process used by manager to schedule shifts for 12 employees."
+            ]
         }
     ]
 }
