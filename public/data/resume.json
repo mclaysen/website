@@ -165,5 +165,18 @@
                 "Used Microsoft Excel to improve efficiency of the scheduling process used by manager to schedule shifts for 12 employees."
             ]
         }
+    ],
+    "education": [
+        {
+            "school": "University of Michigan",
+            "location": 
+            {
+                "city": "Ann Arbor",
+                "state": "MI",
+                "zip": "48109"
+            },
+            "degree": "Bachelor of Science in Industrial and Operations Engineering",
+            "dateObtained": "2010-05-01T08:00:00Z"
+        }
     ]
 }

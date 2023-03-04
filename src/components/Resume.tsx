@@ -17,6 +17,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import { useFetch } from '../api/useFetch';
 import ProfessionalExperience from './ProfessionalExperience';
+import EducationData from './EducationData';
 
 const Resume = () => {
 
@@ -64,6 +65,7 @@ const Resume = () => {
           {data?.jobExperience?.map((value, index)=>{
             return <ProfessionalExperience role={value} index={index}></ProfessionalExperience>
           })}
+        { data?.education !== undefined ? <EducationData educationInfo={data?.education}></EducationData> : <></> }
 
           
         
