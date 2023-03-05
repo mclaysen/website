@@ -10,7 +10,7 @@ import { ResumeMainProps, Education } from './ResumeProps';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 import {theme} from '../theme/typeography';
 import { start } from 'repl';
-import { GetYearInformation } from '../utils/GetDateInformation';
+import { GetDateInformation } from '../utils/GetDateInformation';
 
 const EducationData = ({educationInfo} : {educationInfo: Education[]}) => {
 
@@ -43,7 +43,7 @@ const EducationData = ({educationInfo} : {educationInfo: Education[]}) => {
               </Grid>
             </Grid>
             <Grid item xs={2}>
-              <Box sx={{textAlign: 'right'}}>{GetYearInformation(value.dateObtained, undefined, false)}</Box>
+              <Box sx={{textAlign: 'right'}}>{GetDateInformation(value.dateObtained)}</Box>
             </Grid>
           </Grid>
         })
