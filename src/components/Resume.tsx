@@ -18,6 +18,7 @@ import Divider from '@mui/material/Divider';
 import { useFetch } from '../api/useFetch';
 import ProfessionalExperience from './ProfessionalExperience';
 import EducationData from './EducationData';
+import OtherExperienceData from './OtherExperienceData';
 
 const Resume = () => {
 
@@ -67,6 +68,9 @@ const Resume = () => {
         })}
         { data?.education?.map((value, index)=> {
           return <EducationData educationInfo={value} index={index}></EducationData>
+        })}
+        { data?.otherExperiences?.map((value, index)=>{
+          return <OtherExperienceData otherExperienceInfo={value} index={index}></OtherExperienceData>
         })}
 
           

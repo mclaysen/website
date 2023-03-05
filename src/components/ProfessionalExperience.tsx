@@ -13,6 +13,11 @@ import { start } from 'repl';
 import { GetDateInformation } from '../utils/GetDateInformation'
 
 const ProfessionalExperience = ({role, index} : {role: Role, index: Number}) => {
+  role.startDate = new Date(role.startDate);
+  if(role.endDate !== undefined)
+  {
+    role.endDate = new Date(role.endDate);
+  }
 
   return (<Box sx={{
     display: "flex",
