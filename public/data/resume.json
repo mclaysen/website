@@ -178,5 +178,45 @@
             "degree": "Bachelor of Science in Industrial and Operations Engineering",
             "dateObtained": "2010-05-01T08:00:00Z"
         }
+    ],
+    "otherExperiences" : [
+        {
+            "category": "Grants",
+            "type": 
+            [
+                {
+                    "title": "UMHS Fostering Innovation Grant",
+                    "subTitle": "Proposal to Increase Information Gathering and Compliance at UMHS",
+                    "startDate": "2013-05-01T08:00:00Z",
+                    "highlights":
+                    [
+                        "Worked with department heads to implement data gathering techniques required for process improvement projects"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Leadership",
+            "type":
+            [
+                {
+                    "title": "Canton Coders",
+                    "startDate": "2020-03-01T08:00:00Z",
+                    "highlights": 
+                    [
+                        "Group to support growth of developers across Michigan"
+                    ]
+                },
+                {
+                    "title": "Couzens House Hall Council",
+                    "subTitle": "Treasurer",
+                    "highlights": 
+                    [
+                        "Managed $5,000 budget",
+                        "Planned and supervised more than 10 events for Couzens Hall"
+                    ]
+                }
+            ]
+        }
     ]
 }
