@@ -8,15 +8,18 @@ export function GetDateInformation(startDate: Date, endDate?: Date, currentRole?
     let endText = '';
     let separator = ' - '
 
-    let startDateValue = DateTime.fromISO(startDate.toISOString()).toFormat(dateFormat);
+    startDate = new Date(startDate);
+
+    let startText = DateTime.fromISO((startDate as Date).toISOString()).toFormat(dateFormat);
     if(currentRole == true)
     {
         endText = "present";
     }
     else if(endDate)
     {
+        endDate = new Date(endDate);
         let endDateValue = DateTime.fromISO(endDate.toISOString());
         endText = endDateValue.toFormat(dateFormat);
     }
-    return startDateValue + (endText === '' ? '' : separator + endText);
+    return startText + (endText === '' ? '' : separator + endText);
 }

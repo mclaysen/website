@@ -62,10 +62,12 @@ const Resume = () => {
             </Box>
           </Grid>
         </Grid>
-          {data?.jobExperience?.map((value, index)=>{
-            return <ProfessionalExperience role={value} index={index}></ProfessionalExperience>
-          })}
-        { data?.education !== undefined ? <EducationData educationInfo={data?.education}></EducationData> : <></> }
+        { data?.jobExperience?.map((value, index)=>{
+          return <ProfessionalExperience role={value} index={index}></ProfessionalExperience>
+        })}
+        { data?.education?.map((value, index)=> {
+          return <EducationData educationInfo={value} index={index}></EducationData>
+        })}
 
           
         
