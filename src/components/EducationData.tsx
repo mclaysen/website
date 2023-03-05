@@ -10,7 +10,7 @@ import { ResumeMainProps, Education } from './ResumeProps';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 import {theme} from '../theme/typeography';
 import { start } from 'repl';
-import { GetYearInformation } from '../utils/GetYearInformation';
+import { GetYearInformation } from '../utils/GetDateInformation';
 
 const EducationData = ({educationInfo} : {educationInfo: Education[]}) => {
 

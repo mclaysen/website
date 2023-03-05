@@ -10,7 +10,7 @@ import { ResumeMainProps, Role } from './ResumeProps';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 import {theme} from '../theme/typeography';
 import { start } from 'repl';
-import { GetYearInformation } from '../utils/GetYearInformation'
+import { GetDateInformation } from '../utils/GetDateInformation'
 
 const ProfessionalExperience = ({role, index} : {role: Role, index: Number}) => {
 
@@ -52,7 +52,7 @@ const ProfessionalExperience = ({role, index} : {role: Role, index: Number}) => 
           </Grid>
         </Grid>
         <Grid item xs={2}>
-          <Box sx={{textAlign: 'right'}}>{GetYearInformation(role.startDate, role.endDate, role.currentRole)}</Box>
+          <Box sx={{textAlign: 'right'}}>{GetDateInformation(role.startDate, role.endDate, role.currentRole)}</Box>
         </Grid>
       </Grid>
     </ThemeProvider>
