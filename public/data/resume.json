@@ -1,0 +1,255 @@
+{
+    "name":
+    {
+        "first": "Matthew",
+        "middleInitial": "M",
+        "last": "Claysen"
+    },
+    "address": 
+    {
+        "city": "Birmingham",
+        "state": "MI",
+        "zip":"48009"
+    },
+    "phone": "248-971-0812",
+    "email": "contact@mclaysen.com",
+    "jobExperience":
+    [
+        {
+            "company": "Michigan Medicine",
+            "location": 
+            {
+                "city": "Ann Arbor",
+                "state": "MI",
+                "zip": "48109"
+            },
+            "startDate": "2017-12-01T08:00:00",
+            "endDate": "2021-01-01T08:00:00Z",
+            "currentRole": false,
+            "title":"Application Development Team Manager",
+            "summary": "Manage Application Development team within the Perioperative Services department of Michigan Medicine. This team supports 6 operating room sites and multiple procedural areas. My role is to lead projects, develop software, and guide the team with a goal of increasing patient safety, and improving perioperative outcomes. In this role I regularly interface with leaders throughout the organization, including executive leaders, and Surgical Chairs.",
+            "highlights":
+            [
+                "Maintain and develop over 30 different custom applications, 5 of which have hundreds of unique daily users.",
+                "Lead project to implement electronic crash carts audits throughout Michigan Medicine. Carts that have implemented the electronic check were found to be four times more likely to be checked.",
+                "Introduce DevOps practices and agile processes to the Application Development team.",
+                "Support the Finance Department with metrics for key budgetary decisions.",
+                "Implement Extreme Programming techniques.",
+                "Manage data visualization and data sources for hundreds of dashboards used throughout Michigan Medicine.",
+                "Collaborate with other teams to efficiently allocate tasks. Resulted in Application Development team adding minimal work, while reducing around 15% of engineering FTEs from other areas.",
+                "Implement concept of backlog management, and process to plan work",
+                "Reduce effort to onboard new employees by centralizing resources.",
+                "Form weekly team building exercises and encourage learning as part of the workday."
+            ]
+        },
+        {
+            "company": "Open Systems Technologies",
+            "location": 
+            {
+                "city": "Southfield",
+                "state": "MI",
+                "zip": "00000"
+            },
+            "startDate": "2017-01-01T08:00:00Z",
+            "endDate": "2017-12-01T08:00:00",
+            "currentRole": false,
+            "title":"Application Development Consultant",
+            "summary": "Worked with leadership from major companies, throughout the United States, to help them reach their goals. This role consisted of developing custom application, working with leaders to improve business practices, and interfacing with customers for support.",
+            "highlights":
+            [
+                "Directed project with a large packaging company to implement application that handled logistics and operations for their national supply chain. The application combined several different systems together and was utilized throughout the company.",
+                "Managed the application development portion for the conversion of  a banking system for a heavy machine manufacturer. A custom electronic data interchange was developed to manage Automated Clearing House transactions. This project consisted of weekly meetings with executives.",
+                "Designed and developed an interface from Microsoft Dynamics AX to Ctuit for a major hotel and casino. The interface was designed to automatically import food and beverage purchases to Ctuit",
+                "Designed and developed, as part of a team, a portion of a software suite for a major shipping carrier. The suite was used to track cross-border movement of goods and assisted with calculating duties and tariffs."
+            ]
+        },
+        {
+            "company": "Michigan Medicine",
+            "location": 
+            {
+                "city": "Ann Arbor",
+                "state": "MI",
+                "zip": "48109"
+            },
+            "startDate": "2013-09-01T08:00:00Z",
+            "endDate": "2017-01-01T08:00:00Z",
+            "currentRole": false,
+            "title":"Lead Industrial Engineer",
+            "summary": "Managed major process improvement projects within Michigan Medicine Perioperative Services. In addition, I oversaw other Industrial Engineers within the department, and coordinated with other engineers from the University of Michigan College of Engineering.",
+            "highlights":
+            [
+                "Oversaw engineering resources within Perioperative Services department.",
+                "Managed several projects within the Central Sterile Processing Department. The result of these projects led to a 20% reduction in instrument assembly lead time, saving thousands of dollars per day.",
+                "Held leadership position for the Perioperative Quality Improvement Committee, which included surgical chairs from all departments. The goal of this team was to implement a process to assist with quick solutions to common perioperative process issue.",
+                "Designed, developed, implemented, and maintained a surgical specimen tracking application through a collaboration with the Department of Pathology across all operating rooms. This tool eliminated a process gap that could lead to a lost specimen.",
+                "Led a project to improve operating room billing processes. This project automated 95% of the process and eliminated a billing gap of around $35,000 per month.",
+                "Implemented service that worked with departments to audit areas of interest. Electronic audits were implemented, and data isualization was supported. Received grant for this work.",
+                "Worked on performance improvement projects in the Central Sterile Processing Department with a combined outcome of reducing overall process lead time by 33%.",
+                "Guided student projects with teams from the College of Engineering, Business School, and School of Public Health"
+            ]
+        },
+        {
+            "company": "Michigan Medicine",
+            "location": 
+            {
+                "city": "Ann Arbor",
+                "state": "MI",
+                "zip": "48109"
+            },
+            "startDate": "2011-11-01T08:00:00Z",
+            "endDate": "2013-09-01T08:00:00Z",
+            "currentRole": false,
+            "title":"Industrial Engineer",
+            "summary": "Act as a support engineer for projects within the Perioperative Services department. I collaborated with other engineers on projects and assisted with data needs. I utilized my background in lean manufacturing by applying those principles to healthcare.",
+            "highlights":
+            [
+                "Developed and supported electronic process to track issues that arise in any of the Perioperative Services departments.",
+                "Managed lean project to reduce delivery time of medical equipment, especially infusion pumps. This project resulted in a 60% reduction of lead time for the delivery of an average of nearly 100 items per day.",
+                "Implemented tracking process for loaner instrumentation in conjunction with the Perioperative Supply Chain team. This software was designed to understand volumes, track issues, and implement communication pathway between the Supply Chain team and the Central Sterile Processing Department.",
+                "Developed process to track personal protective equipment in the operating rooms. This project allowed tracking of testing results, ownership, and condition of around 1000 pieces of equipment.",
+                "Designed staffing model for Perioperative Technicians, by analyzing workload and shadowing staff. This project demonstrated there was an extreme shortage in staff and resulted in an increase of staffing levels from 25 to 30 FTEs."
+            ]
+        },
+        {
+            "company": "Michigan Medicine",
+            "location": 
+            {
+                "city": "Ann Arbor",
+                "state": "MI",
+                "zip": "48109"
+            },
+            "startDate": "2010-07-01T08:00:00Z",
+            "endDate": "2011-11-01T08:00:00Z",
+            "currentRole": false,
+            "title":"Management Engineer Fellow",
+            "summary": "Supported senior engineers and directors with making data driven decisions regarding major expansion project for the Central Sterile Processing Department.",
+            "highlights":
+            [
+                "Designed workflow for multimillion-dollar renovation of the Central Sterile Processing Department using lean techniques and coordinated transition to renovated department.",
+                "Held leadership role on the Sterilization and Disinfection Subcommittee, which was charged with managing sterilization practices, and performing RCAs on process issues."
+            ]
+        },
+        {
+            "company": "Michigan Medicine",
+            "location": 
+            {
+                "city": "Ann Arbor",
+                "state": "MI",
+                "zip": "48109"
+            },
+            "startDate": "2010-01-01T08:00:00Z",
+            "endDate": "2010-05-01T08:00:00Z",
+            "currentRole": false,
+            "title":"Senior Design Team",
+            "summary": "Worked directly with the current Chief Medical Officer of Michigan Medicine to analyze and recommend improvements to the current Adult Emergency Department intake process.",
+            "highlights":
+            [
+                "Created flowchart of Emergency Department intake process, collected data, compared to historical data, analyzed findings, and developed recommendations to reduce time between a patient arrival, and initial encounter with a physician."
+            ]
+        },
+        {
+            "company": "University of Michigan International Center",
+            "location": 
+            {
+                "city": "Ann Arbor",
+                "state": "MI",
+                "zip": "48109"
+            },
+            "startDate": "2008-07-01T08:00:00Z",
+            "endDate": "2008-09-01T08:00:00Z",
+            "currentRole": false,
+            "title":"Media Assistant/Student Services",
+            "summary": "Role to assist with programs that were designed to help acclimate international students to their new environment.",
+            "highlights":
+            [
+                "Used Microsoft Excel to improve efficiency of the scheduling process used by manager to schedule shifts for 12 employees."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "school": "University of Michigan",
+            "location": 
+            {
+                "city": "Ann Arbor",
+                "state": "MI",
+                "zip": "48109"
+            },
+            "degree": "Bachelor of Science in Industrial and Operations Engineering",
+            "dateObtained": "2010-05-01T08:00:00Z"
+        }
+    ],
+    "otherExperiences" : [
+        {
+            "category": "Grants",
+            "type": 
+            [
+                {
+                    "title": "UMHS Fostering Innovation Grant",
+                    "subTitle": "Proposal to Increase Information Gathering and Compliance at UMHS",
+                    "startDate": "2013-05-01T08:00:00Z",
+                    "highlights":
+                    [
+                        "Worked with department heads to implement data gathering techniques required for process improvement projects"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Leadership",
+            "type":
+            [
+                {
+                    "title": "Canton Coders",
+                    "startDate": "2020-03-01T08:00:00Z",
+                    "highlights": 
+                    [
+                        "Group to support growth of developers across Michigan"
+                    ]
+                },
+                {
+                    "title": "Couzens House Hall Council",
+                    "subTitle": "Treasurer",
+                    "startDate": "2007-05-01T08:00:00Z",
+                    "endDate": "2008-05-01T08:00:00Z",
+                    "highlights": 
+                    [
+                        "Managed $5,000 budget",
+                        "Planned and supervised more than 10 events for Couzens Hall"
+                    ]
+                }
+            ]
+        }
+    ],
+    "skills":
+    [
+        {
+            "category": "Programming Languages",
+            "examples":
+            [
+                "C++", "C#", "Visual Basic", "T-SQL", "PHP", "JavaScript"
+            ]
+        },
+        {
+            "category": "Other technologies",
+            "examples": 
+            [
+                "SOAP", "AJAX", "HTML", "CSS", "Bootstrap", ".NET Core", "Entity Framework", "jQuery", "React", "AngularJS", "Polymer", "REST", "Azure DevOps", "Swagger"
+            ]
+        },
+        {
+            "category": "Databases",
+            "examples":
+            [
+                "Microsoft SQL Server", "MySQL", "Oracle"
+            ]
+        },
+        {
+            "category": "BI Tools",
+            "examples":
+            [
+                "AX", "Tableau"
+            ]
+        }
+    ]
+}
