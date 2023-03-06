@@ -9,7 +9,7 @@ export function GetDateInformation(startDate: Date, endDate?: Date, currentRole?
     let separator = ' - '
 
     let startText = DateTime.fromISO((startDate as Date).toISOString()).toFormat(dateFormat);
-    if(currentRole == true)
+    if(currentRole === true)
     {
         endText = "present";
     }
