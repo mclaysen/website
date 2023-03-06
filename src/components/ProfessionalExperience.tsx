@@ -3,13 +3,10 @@ import Box from '@mui/material/Box';
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import ListItemText from '@mui/material/ListItemText'
-import Container from '@mui/material/Container';
-import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
-import { ResumeMainProps, Role } from './ResumeProps';
-import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
+import { Role } from './ResumeProps';
+import { ThemeProvider } from '@mui/material/styles';
 import {theme} from '../theme/typeography';
-import { start } from 'repl';
 import { GetDateInformation } from '../utils/GetDateInformation'
 
 const ProfessionalExperience = ({role, index} : {role: Role, index: Number}) => {

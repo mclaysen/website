@@ -1,19 +1,6 @@
-import React, {useState, Component} from 'react';
-import {
-    useQuery,
-    useQueryClient,
-    QueryClient,
-    QueryClientProvider,
-  } from "react-query";
-import { ReactQueryDevtools } from 'react-query/devtools';
-import ReactDOM from 'react-dom';
 import Grid from '@mui/material/Grid';
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import {NameDiv} from './Resume.styles';
 import Container from '@mui/material/Container';
-import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import { useFetch } from '../api/useFetch';
 import ProfessionalExperience from './ProfessionalExperience';
