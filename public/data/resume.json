@@ -210,12 +210,45 @@
                 {
                     "title": "Couzens House Hall Council",
                     "subTitle": "Treasurer",
+                    "startDate": "2007-05-01T08:00:00Z",
+                    "endDate": "2008-05-01T08:00:00Z",
                     "highlights": 
                     [
                         "Managed $5,000 budget",
                         "Planned and supervised more than 10 events for Couzens Hall"
                     ]
                 }
+            ]
+        }
+    ],
+    "skills":
+    [
+        {
+            "category": "Programming Languages",
+            "examples":
+            [
+                "C++", "C#", "Visual Basic", "T-SQL", "PHP", "JavaScript"
+            ]
+        },
+        {
+            "category": "Other technologies",
+            "examples": 
+            [
+                "SOAP", "AJAX", "HTML", "CSS", "Bootstrap", ".NET Core", "Entity Framework", "jQuery", "React", "AngularJS", "Polymer", "REST", "Azure DevOps", "Swagger"
+            ]
+        },
+        {
+            "category": "Databases",
+            "examples":
+            [
+                "Microsoft SQL Server", "MySQL", "Oracle"
+            ]
+        },
+        {
+            "category": "BI Tools",
+            "examples":
+            [
+                "AX", "Tableau"
             ]
         }
     ]

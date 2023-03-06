@@ -4,7 +4,7 @@ import { DateTime } from 'luxon';
 export function GetDateInformation(dateOfOccurance: Date) : string;
 export function GetDateInformation(startDate: Date, endDate?: Date, currentRole?: Boolean) : string;
 export function GetDateInformation(startDate: Date, endDate?: Date, currentRole?: Boolean) : string {
-    let dateFormat = 'MM/yyyy';
+    let dateFormat = 'MM/yy';
     let endText = '';
     let separator = ' - '
 

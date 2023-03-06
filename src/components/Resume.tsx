@@ -19,6 +19,7 @@ import { useFetch } from '../api/useFetch';
 import ProfessionalExperience from './ProfessionalExperience';
 import EducationData from './EducationData';
 import OtherExperienceData from './OtherExperienceData';
+import OtherSkills from './OtherSkills';
 
 const Resume = () => {
 
@@ -72,9 +73,7 @@ const Resume = () => {
         { data?.otherExperiences?.map((value, index)=>{
           return <OtherExperienceData otherExperienceInfo={value} index={index}></OtherExperienceData>
         })}
-
-          
-        
+        {data?.skills && <OtherSkills skills={data?.skills}></OtherSkills>}
       </Container>)
 }
 
