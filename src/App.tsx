@@ -1,19 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Resume from './components/Resume';
-import { QueryClient, QueryClientProvider, useQuery } from 'react-query';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
 const queryClient = new QueryClient()
 
-
 function App() {
-
-
-  
-
-
-
   return (
     <QueryClientProvider client={queryClient}>
       <div className="App">
@@ -23,8 +15,4 @@ function App() {
     </QueryClientProvider>
   );
 }
-
-
-
-
 export default App;

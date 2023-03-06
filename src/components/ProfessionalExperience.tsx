@@ -1,3 +1,4 @@
+import React from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List'
@@ -23,7 +24,7 @@ const ProfessionalExperience = ({role, index} : {role: Role, index: Number}) => 
     <ThemeProvider theme={theme}>
       <Grid container>
         <Grid item xs={1}>
-          {index==0 ? <Box sx={{fontWeight: 'bold'}}>Experience</Box> : <Box></Box>}
+          {index===0 ? <Box sx={{fontWeight: 'bold'}}>Experience</Box> : <Box></Box>}
         </Grid>
         <Grid item xs={9}>
           <Grid container spacing={0}>
