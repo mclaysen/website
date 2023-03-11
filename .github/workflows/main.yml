@@ -36,7 +36,6 @@ jobs:
           remote_path: '/var/www/staging-mclaysen.com/public_html/'
           password: ${{secrets.SERVER_PASSWORD}}
           port: ${{secrets.SERVER_PORT}}
-          sftp_only: true
   production:
     if: github.event.inputs.releaseType == 'production'
     name: Deploy to production
@@ -61,4 +60,3 @@ jobs:
           remote_path: '/var/www/mclaysen.com/public_html/'
           password: ${{secrets.SERVER_PASSWORD}}
           port: ${{secrets.SERVER_PORT}}
-          sftp_only: true
