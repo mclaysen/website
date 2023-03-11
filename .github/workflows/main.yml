@@ -1,15 +1,47 @@
 name: mclaysen.com-deploy
-on: [push]
+on:
+  push: 
+    branches:
+      - main
+      - cifix
+  workflow_dispatch:
+    inputs: 
+      releaseType:
+        description: 'Where to release (staging or production)'
+        required: true
+        default: 'staging'
 
 jobs:
-  deploy:
-    name: Deploy
+  staging:
+    name: Deploy to staging
     runs-on: ubuntu-latest
     environment:
-      name: Production
+      name: Staging
     steps:
       - name: Create Artifact
         uses: ./.github/actions/build
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: mclaysen.com-artifact
+          path: build
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ${{secrets.SERVER_IP}}
+          username: ${{secrets.SERVER_USER}}
+          password: ${{secrets.SERVER_PASSWORD}}
+          port: ${{secrets.SERVER_PORT}}
+          local-dir: build
+          server-dir: ${{env.DIRECTORY}}
+  production:
+    if: github.event.inputs.releaseType == 'production'
+    name: Deploy to production
+    runs-on: ubuntu-latest
+    environment:
+      name: Production
+    needs: [staging]
+    steps:
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
