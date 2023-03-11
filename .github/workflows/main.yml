@@ -33,7 +33,7 @@ jobs:
           username: ${{secrets.SERVER_USER}}
           password: ${{secrets.SERVER_PASSWORD}}
           port: ${{secrets.SERVER_PORT}}
-          local-dir: build
+          local-dir: ./build/
           server-dir: ${{env.DIRECTORY}}
   production:
     if: github.event.inputs.releaseType == 'production'
@@ -56,5 +56,5 @@ jobs:
           username: ${{secrets.SERVER_USER}}
           password: ${{secrets.SERVER_PASSWORD}}
           port: ${{secrets.SERVER_PORT}}
-          local-dir: build
+          local-dir: ./build/
           server-dir: ${{env.DIRECTORY}}
