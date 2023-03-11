@@ -33,7 +33,7 @@ jobs:
           server: ${{secrets.SERVER_IP}}
           ssh_private_key: ${{secrets.SERVER_KEY}}
           local_path: './build/*'
-          remote_path: ${{env.DIRECTORY}}
+          remote_path: '/var/www/staging-mclaysen.com/public_html/'
           password: ${{secrets.SERVER_PASSWORD}}
           port: ${{secrets.SERVER_PORT}}
           sftp_only: true
@@ -58,7 +58,7 @@ jobs:
           server: ${{secrets.SERVER_IP}}
           ssh_private_key: ${{secrets.SERVER_KEY}}
           local_path: './build/*'
-          remote_path: ${{env.DIRECTORY}}
+          remote_path: '/var/www/mclaysen.com/public_html/'
           password: ${{secrets.SERVER_PASSWORD}}
           port: ${{secrets.SERVER_PORT}}
           sftp_only: true
