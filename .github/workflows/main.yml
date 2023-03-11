@@ -10,6 +10,8 @@ jobs:
     environment:
       name: Production
     steps:
+      - name: Create Artifact
+        uses: ./.github/actions
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
