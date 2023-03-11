@@ -1,7 +1,5 @@
 name: mclaysen.com-deploy
-on:
-  push:
-    branches: main
+on: [push]
 
 jobs:
   deploy:
@@ -11,7 +9,7 @@ jobs:
       name: Production
     steps:
       - name: Create Artifact
-        uses: ./.github/actions
+        uses: ./.github/actions/build
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
