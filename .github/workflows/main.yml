@@ -29,13 +29,13 @@ jobs:
       - name: Sync files
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          username: ${{secrets.SERVER_USER}}
-          server: ${{secrets.SERVER_IP}}
-          ssh_private_key: ${{secrets.SERVER_KEY}}
+          username: ${{ secrets.SERVER_USER }}
+          server: ${{ secrets.SERVER_IP}}
+          ssh_private_key: ${{ secrets.SERVER_KEY }}
           local_path: './build/*'
           remote_path: '/var/www/staging-mclaysen.com/public_html/'
-          password: ${{secrets.SERVER_PASSWORD}}
-          port: ${{secrets.SERVER_PORT}}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          port: ${{ secrets.SERVER_PORT }}
   production:
     if: github.event.inputs.releaseType == 'production'
     name: Deploy to production
@@ -53,10 +53,10 @@ jobs:
       - name: Sync files
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          username: ${{secrets.SERVER_USER}}
-          server: ${{secrets.SERVER_IP}}
-          ssh_private_key: ${{secrets.SERVER_KEY}}
+          username: ${{ secrets.SERVER_USER }}
+          server: ${{ secrets.SERVER_IP }}
+          ssh_private_key: ${{ secrets.SERVER_KEY }}
           local_path: './build/*'
           remote_path: '/var/www/mclaysen.com/public_html/'
-          password: ${{secrets.SERVER_PASSWORD}}
-          port: ${{secrets.SERVER_PORT}}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          port: ${{ secrets.SERVER_PORT }}
