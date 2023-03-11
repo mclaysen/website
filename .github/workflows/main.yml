@@ -50,11 +50,13 @@ jobs:
           name: mclaysen.com-artifact
           path: build
       - name: Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: ${{secrets.SERVER_IP}}
           username: ${{secrets.SERVER_USER}}
+          server: ${{secrets.SERVER_IP}}
+          ssh_private_key: ${{secrets.SERVER_KEY}}
+          local_path: './build/'
+          remote_path: ${{env.DIRECTORY}}
           password: ${{secrets.SERVER_PASSWORD}}
           port: ${{secrets.SERVER_PORT}}
-          local-dir: ./build/
-          server-dir: ${{env.DIRECTORY}}
+          sftp_only: true
