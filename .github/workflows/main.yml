@@ -1,28 +1,50 @@
 name: mclaysen.com-deploy
-on:
-  push:
-    branches: main
+on: [push]
 
 jobs:
-  deploy:
-    name: Deploy
+  staging:
+    name: Deploy to staging
     runs-on: ubuntu-latest
     environment:
-      name: Production
+      name: Staging
     steps:
+      - uses: actions/checkout@v3
       - name: Create Artifact
-        uses: ./.github/actions
+        uses: ./.github/actions/build
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
           name: mclaysen.com-artifact
           path: build
-      - name: Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      - name: Deploy Code - Staging
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_KEY }}
+          SOURCE: 'build/'
+          REMOTE_HOST: ${{ secrets.SERVER_IP }}
+          REMOTE_USER: ${{ secrets.SERVER_USER }}
+          REMOTE_PORT: ${{ secrets.SERVER_PORT }}
+          TARGET: ${{ vars.DIRECTORY }}
+  production:
+    if: github.ref_name == 'main'
+    name: Deploy to production
+    runs-on: ubuntu-latest
+    environment:
+      name: Production
+    needs: [staging]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download artifact
+        uses: actions/download-artifact@v3
         with:
-          server: ${{secrets.SERVER_IP}}
-          username: ${{secrets.SERVER_USER}}
-          password: ${{secrets.SERVER_PASSWORD}}
-          port: ${{secrets.SERVER_PORT}}
-          local-dir: build
-          server-dir: ${{env.DIRECTORY}}
+          name: mclaysen.com-artifact
+          path: build
+      - name: Deploy Code - Production
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_KEY }}
+          SOURCE: 'build/'
+          REMOTE_HOST: ${{ secrets.SERVER_IP }}
+          REMOTE_USER: ${{ secrets.SERVER_USER }}
+          REMOTE_PORT: ${{ secrets.SERVER_PORT }}
+          TARGET: ${{ vars.DIRECTORY }}
