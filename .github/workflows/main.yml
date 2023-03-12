@@ -34,14 +34,7 @@ jobs:
           REMOTE_HOST: ${{ secrets.SERVER_IP }}
           REMOTE_USER: ${{ secrets.SERVER_USER }}
           REMOTE_PORT: ${{ secrets.SERVER_PORT }}
-          TARGET: '/var/www/mclaysen.com/public_html/'
-          SCRIPT_BEFORE: |
-            whoami
-            ls -al
-          SCRIPT_AFTER: |
-            whoami
-            ls -al
-            echo $RSYNC_STDOUT
+          TARGET: ${{ env.Directory }}
   production:
     if: github.event.inputs.releaseType == 'production'
     name: Deploy to production
