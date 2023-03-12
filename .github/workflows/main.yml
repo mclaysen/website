@@ -26,7 +26,7 @@ jobs:
         with:
           name: mclaysen.com-artifact
           path: build
-      - name: Install SSH Key
+      - name: Deploy Code
         uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_KEY }}
@@ -34,7 +34,7 @@ jobs:
           REMOTE_HOST: ${{ secrets.SERVER_IP }}
           REMOTE_USER: ${{ secrets.SERVER_USER }}
           REMOTE_PORT: ${{ secrets.SERVER_PORT }}
-          TARGET: ${{ env.Directory }}
+          TARGET: ${{ vars.DIRECTORY }}
   production:
     if: github.event.inputs.releaseType == 'production'
     name: Deploy to production
