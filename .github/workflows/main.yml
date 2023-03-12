@@ -1,15 +1,5 @@
 name: mclaysen.com-deploy
-on:
-  push: 
-    branches:
-      - main
-      - cifix
-  workflow_dispatch:
-    inputs: 
-      releaseType:
-        description: 'Where to release (staging or production)'
-        required: true
-        default: 'staging'
+on: [push]
 
 jobs:
   staging:
@@ -26,7 +16,7 @@ jobs:
         with:
           name: mclaysen.com-artifact
           path: build
-      - name: Deploy Code
+      - name: Deploy Code - Staging
         uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_KEY }}
@@ -36,7 +26,7 @@ jobs:
           REMOTE_PORT: ${{ secrets.SERVER_PORT }}
           TARGET: ${{ vars.DIRECTORY }}
   production:
-    if: github.event.inputs.releaseType == 'production'
+    if: github.ref_name == 'main'
     name: Deploy to production
     runs-on: ubuntu-latest
     environment:
@@ -49,7 +39,7 @@ jobs:
         with:
           name: mclaysen.com-artifact
           path: build
-      - name: Deploy Code
+      - name: Deploy Code - Production
         uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_KEY }}
