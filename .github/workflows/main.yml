@@ -49,13 +49,12 @@ jobs:
         with:
           name: mclaysen.com-artifact
           path: build
-      - name: Sync files
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-          username: ${{ secrets.SERVER_USER }}
-          server: ${{ secrets.SERVER_IP }}
-          ssh_private_key: ${{ secrets.SERVER_KEY }}
-          local_path: './build/*'
-          remote_path: '/var/www/mclaysen.com/public_html/'
-          password: ${{ secrets.SERVER_PASSWORD }}
-          port: ${{ secrets.SERVER_PORT }}
+      - name: Deploy Code
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_KEY }}
+          SOURCE: 'build/'
+          REMOTE_HOST: ${{ secrets.SERVER_IP }}
+          REMOTE_USER: ${{ secrets.SERVER_USER }}
+          REMOTE_PORT: ${{ secrets.SERVER_PORT }}
+          TARGET: ${{ vars.DIRECTORY }}
