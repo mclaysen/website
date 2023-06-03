@@ -43,7 +43,7 @@ const OtherExperienceData = ({otherExperienceInfo, index} : {otherExperienceInfo
                 return <Grid item xs={12}>
                             <Grid container>
                                 <Grid item xs={12} md={2}>
-                                    <Title>{otherExperienceInfo.category}</Title>
+                                    {index===0 && <Title>{otherExperienceInfo.category}</Title>}
                                 </Grid>
                                 {isSmallScreen && <Grid item xs={1}></Grid>}
                                 <Grid item xs={11} md={8}>

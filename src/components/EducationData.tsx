@@ -16,8 +16,9 @@ const EducationData = ({educationInfo, index} : {educationInfo: Education, index
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
 
   return (<Box sx={{
-    display: "flex",
-    textAlign: "left"
+    display: 'flex',
+    textAlign: 'left',
+    paddingBottom: '8px'
   }}>
     <ThemeProvider theme={theme}>
       <Grid container>

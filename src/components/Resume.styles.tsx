@@ -11,7 +11,7 @@ export const Title = styled(Typography)(({ }) => ({
     paddingBottom: '10px',
     fontSize:`${theme.typography.body1.fontSize}`,
     [theme.breakpoints.down('md')]: {
-        fontSize:`${theme.typography.h5.fontSize}`,
+        fontSize:`${theme.typography.h6.fontSize}`,
     }
 }));
 
