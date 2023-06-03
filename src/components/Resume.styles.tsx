@@ -6,7 +6,7 @@ export const NameDiv = {
     align: "left"
 }
 
-export const Title = styled(Typography)(({ }) => ({
+export const Title = styled(Typography)(() => ({
     fontWeight: 'bold',
     paddingBottom: '10px',
     fontSize:`${theme.typography.body1.fontSize}`,
@@ -15,7 +15,7 @@ export const Title = styled(Typography)(({ }) => ({
     }
 }));
 
-export const DateInfo = styled(Typography)(({ }) => ({
+export const DateInfo = styled(Typography)(() => ({
     display: 'inline',
     fontSize:`${theme.typography.body1.fontSize}`,
     [theme.breakpoints.down('md')]: {
