@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import ListItemText from '@mui/material/ListItemText'
-import Typography, { TypographyProps } from '@mui/material/Typography';
+import Typography from '@mui/material/Typography';
 import { Role } from './ResumeProps';
 import { ThemeProvider } from '@mui/material/styles';
 import {theme} from '../theme/typeography';
