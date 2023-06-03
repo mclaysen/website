@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import Resume from './components/Resume';
 import { QueryClient, QueryClientProvider } from 'react-query';
