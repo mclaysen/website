@@ -29,7 +29,7 @@ export interface ResumeMainProps {
   jobExperience?: Role[];
   education?: Education[];
   otherExperiences?: OtherExperience[];
-  skills?: RelevantSkills[];
+  skills?: SkillInformation[];
 }
 
 export interface OtherExperience {
@@ -52,7 +52,12 @@ export interface Education {
   dateObtained: Date;
 }
 
-export interface RelevantSkills {
+export interface SkillInformation {
   category: string;
+  specificSkills: RelevantSkills[];
+}
+
+export interface RelevantSkills {
+  type: string;
   examples: string[];
 }

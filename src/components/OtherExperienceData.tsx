@@ -8,42 +8,48 @@ import { OtherExperience, ExperienceInformation } from './ResumeProps';
 import { ThemeProvider } from '@mui/material/styles';
 import {theme} from '../theme/typeography';
 import { GetDateInformation } from '../utils/GetDateInformation';
+import { DateInfo, Title } from './Resume.styles';
+import { useMediaQuery } from '@mui/material';
 
 const GetPageDateInformation = ({experienceInformation} : {experienceInformation: ExperienceInformation}) =>
 {
     if(experienceInformation.startDate !==undefined && experienceInformation.endDate===undefined)
     {
         const startDate = new Date(experienceInformation.startDate);
-        return <Box sx={{textAlign: 'right'}}>{GetDateInformation(startDate)}</Box>
+        return <DateInfo>{GetDateInformation(startDate)}</DateInfo>
     }
     else if(experienceInformation.endDate!==undefined)
     {
         const startDate = new Date(experienceInformation.startDate);
         const endDate = new Date(experienceInformation.endDate);
-        return <Box sx={{textAlign: 'right'}}>{GetDateInformation(startDate, endDate, false)}</Box>
+        return <DateInfo>{GetDateInformation(startDate, endDate, false)}</DateInfo>
     }
     return <></>
 }
 
 
 const OtherExperienceData = ({otherExperienceInfo, index} : {otherExperienceInfo: OtherExperience, index: number}) => {
+    
+    const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
 
-  return (<Box sx={{
-    display: "flex",
-    textAlign: "left"
-  }}>
+    return (<Box sx={{
+        display: "flex",
+        textAlign: "left"
+    }}>
     <ThemeProvider theme={theme}>
         <Grid container>
         {
             otherExperienceInfo.type.map((value, index)=>{
                 return <Grid item xs={12}>
                             <Grid container>
-                                <Grid item xs={1}>
-                                    <Typography sx={{fontWeight: 'bold'}}>{otherExperienceInfo.category}</Typography>
+                                <Grid item xs={12} md={2}>
+                                    {index===0 && <Title>{otherExperienceInfo.category}</Title>}
                                 </Grid>
-                                <Grid item xs={9}>
+                                {isSmallScreen && <Grid item xs={1}></Grid>}
+                                <Grid item xs={11} md={8}>
                                     <Box>
                                         <Typography sx={{fontWeight: 'bold'}}>{value.title}</Typography>
+                                        {isSmallScreen && <>&nbsp;<GetPageDateInformation experienceInformation={value}></GetPageDateInformation></>}
                                     </Box>
                                     <Box>
                                         <Typography sx={{fontStyle: 'italic'}}>{value.subTitle}</Typography>
@@ -54,9 +60,9 @@ const OtherExperienceData = ({otherExperienceInfo, index} : {otherExperienceInfo
                                         })}
                                     </List>
                                 </Grid>
-                                <Grid item xs={2}>
+                                {!isSmallScreen && <Grid item xs={2} sx={{textAlign: 'right'}}>
                                     <GetPageDateInformation experienceInformation={value}></GetPageDateInformation>
-                                </Grid>
+                                </Grid>}
                             </Grid>
                         </Grid>
                     })
