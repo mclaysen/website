@@ -224,31 +224,37 @@
     "skills":
     [
         {
-            "category": "Programming Languages",
-            "examples":
+            "category": "Technology Skills",
+            "specificSkills": 
             [
-                "C++", "C#", "Visual Basic", "T-SQL", "PHP", "JavaScript"
-            ]
-        },
-        {
-            "category": "Other technologies",
-            "examples": 
-            [
-                "SOAP", "AJAX", "HTML", "CSS", "Bootstrap", ".NET Core", "Entity Framework", "jQuery", "React", "AngularJS", "Polymer", "REST", "Azure DevOps", "Swagger"
-            ]
-        },
-        {
-            "category": "Databases",
-            "examples":
-            [
-                "Microsoft SQL Server", "MySQL", "Oracle"
-            ]
-        },
-        {
-            "category": "BI Tools",
-            "examples":
-            [
-                "AX", "Tableau"
+                {
+                    "type": "Programming Languages",
+                    "examples":
+                    [
+                        "C++", "C#", "Visual Basic", "T-SQL", "PHP", "JavaScript"
+                    ]
+                },
+                {
+                    "type": "Other technologies",
+                    "examples": 
+                    [
+                        "SOAP", "AJAX", "HTML", "CSS", "Bootstrap", ".NET Core", "Entity Framework", "jQuery", "React", "AngularJS", "Polymer", "REST", "Azure DevOps", "Swagger"
+                    ]
+                },
+                {
+                    "type": "Databases",
+                    "examples":
+                    [
+                        "Microsoft SQL Server", "MySQL", "Oracle"
+                    ]
+                },
+                {
+                    "type": "BI Tools",
+                    "examples":
+                    [
+                        "AX", "Tableau"
+                    ]
+                }
             ]
         }
     ]
