@@ -18,7 +18,7 @@ jobs:
           path: build
       - name: Deploy Code - Staging
         uses: easingthemes/ssh-deploy@main
-        env:
+        with:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_KEY }}
           SOURCE: 'build/'
           REMOTE_HOST: ${{ secrets.SERVER_IP }}
@@ -41,7 +41,7 @@ jobs:
           path: build
       - name: Deploy Code - Production
         uses: easingthemes/ssh-deploy@main
-        env:
+        with:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_KEY }}
           SOURCE: 'build/'
           REMOTE_HOST: ${{ secrets.SERVER_IP }}
