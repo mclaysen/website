@@ -1,6 +1,4 @@
 import {useEffect, useState} from "react";
-import {ResumeMainProps} from "../components/ResumeProps"
-
 
 export const useFetch = <T,>(url: string) => {
     const[state, setState] = useState<{data: T | null, loading: Boolean}>({data: null, loading: true});
