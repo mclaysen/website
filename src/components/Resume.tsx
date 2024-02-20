@@ -7,10 +7,11 @@ import ProfessionalExperience from './ProfessionalExperience';
 import EducationData from './EducationData';
 import OtherExperienceData from './OtherExperienceData';
 import OtherSkills from './OtherSkills';
+import { ResumeMainProps } from './ResumeProps';
 
 const Resume = () => {
 
-  const {data, loading} = useFetch("/data/resume.json");
+  const {data, loading} = useFetch<ResumeMainProps>("/data/resume.json");
   if(loading)
     return(
       <div>loading</div>
