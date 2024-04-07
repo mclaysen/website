@@ -30,6 +30,8 @@ jobs:
       
       - name: SSH and pull Docker image on server
         run: |
+            mkdir -p ~/.ssh
+            touch ~/.ssh/known_hosts
             ssh-keyscan ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
             ssh -i ${{ secrets.SERVER_SSH_KEY }} ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} "
               docker pull ghcr.io/${{ github.repository_owner }}/mclaysen-website:latest
