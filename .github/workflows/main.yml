@@ -30,6 +30,7 @@ jobs:
       
       - name: SSH and pull Docker image on server
         run: |
+            set -x
             mkdir -p ~/.ssh
             echo "${{secrets.SERVER_SSH_KEY}}" > ~/.ssh/id_rsa
             chmod 600 ~/.ssh/id_rsa
