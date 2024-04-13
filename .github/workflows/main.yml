@@ -35,7 +35,7 @@ jobs:
             chmod 600 ~/.ssh/id_rsa
             touch ~/.ssh/known_hosts
             ssh-keyscan ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
-            ssh -t -i ~/.ssh/id_rsa ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} "
+            ssh -tt -i ~/.ssh/id_rsa ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} "
             echo ${{ secrets.GHCR_TOKEN }} | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
               docker pull ghcr.io/${{ github.repository_owner }}/mclaysen-website:latest
               docker stop mclaysen-website
