@@ -59,25 +59,12 @@ RUN yarn run build
 FROM base as final
 
 # Use production node environment by default.
-ENV NODE_ENV production
+ENV NODE_ENV=production
 
-RUN chown -R node:node /usr/src/app
+RUN yarn global add serve
 
-# Run the application as a non-root user.
-USER node
+COPY --from=build /usr/src/app/build ./build
 
-# Copy package.json so that package manager commands can be used.
-COPY package.json .
-
-# Copy the production dependencies from the deps stage and also
-# the built application from the build stage into the image.
-COPY --from=deps /usr/src/app/node_modules ./node_modules
-COPY --from=build /usr/src/app/public ./public
-COPY src /usr/src/app/src
-COPY tsconfig.json ./
-
-# Expose the port that the application listens on.
 EXPOSE 5001
 
-# Run the application.
-CMD yarn start
+CMD ["serve", "-s", "build"]
